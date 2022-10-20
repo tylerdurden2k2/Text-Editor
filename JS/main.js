@@ -8,9 +8,8 @@ const fontSizeSpan = document.querySelector('.fontSize span');
 
 for(let i=0; i<buttons.length ;i++) {
     buttons[i].addEventListener('click', (e) =>{
-        console.log(e.target)
-        let command = e.target.getAttribute('data');
-
+        
+        let command = (e.target.closest('.btn')).getAttribute('data');
         if(command === "createLink" || command === "insertImage") {
             let url = prompt("Link: ","http://");
             document.execCommand(command,false,url);
