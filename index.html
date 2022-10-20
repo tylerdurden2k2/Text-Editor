@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style.css">
+        <title>My Words</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="buttons">
+                    <button class="btn" data="bold">
+                        <i class="fa fa-bold"></i>
+                    </button>
+                    <button class="btn" data="italic">
+                        <i class="fa fa-italic"></i>
+                    </button>
+                    <button class="btn" data="underline">
+                        <i class="fa fa-underline"></i>
+                    </button>
+                </div>
+                <div class="buttons">
+                    <button class="btn" data="insertUnorderedList">
+                        <i class="fa fa-list-ul"></i>
+                    </button>
+                    <button class="btn" data="insertOrderedList">
+                        <i class="fa fa-list-ol"></i>
+                    </button>
+                </div>
+                <div class="buttons">
+                    <button class="btn" data="createLink">
+                        <i class="fa fa-link"></i>
+                    </button>
+                </div>
+                <div class="buttons">
+                    <button class="btn" data="justifyLeft">
+                        <i class="fa fa-align-left"></i>
+                    </button>
+                    <button class="btn" data="justifyCenter">
+                        <i class="fa fa-align-center"></i>
+                    </button>
+                    <button class="btn" data="justifyRight">
+                        <i class="fa fa-align-right"></i>
+                    </button>
+                    <button class="btn" data="justifyFull">
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+                <div class="buttons">
+                    <button class="btn" data="insertImage">
+                        <i class="fa fa-image"></i>
+                    </button>
+                </div>
+            </header>
+            <div class="fonts">
+                <select id="select_font" onchange="updateFont()">
+                    <option value="Arial">Arial</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Palitico">Palitico</option>
+                    <option value="Garamond">Garamond</option>
+                    <option value="Sans Serif">Sans Serif</option>
+                </select>
+                <div class="fontSize">
+                    <button class="fontSizeUp">Up</button>
+                    <span>font-size</span>
+                    <button class="fontSizeDown">Down</button>
+                </div>
+            </div>
+            <div class="content" contenteditable="true"></div>
+        </div>
+        
+
+        <script src="./JS/main.js"></script>
+        <!-- https://use.fontawesome.com/a31a3f8384.js -->
+        <script src="https://use.fontawesome.com/a31a3f8384.js"></script>
+    </body>
+</html>
